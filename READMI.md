@@ -13,4 +13,4 @@
   * git push -u origin main
   * git push 
   * git pull
- 
+ * git checkout -b <nombre de la rama>  
