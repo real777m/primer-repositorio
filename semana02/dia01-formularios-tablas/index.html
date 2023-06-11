@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+</head>
+<body>
+    <main class="container">
+        <h1>formularios+ validaciones+imputs</h1>
+        <form>
+            <h2>imputs</h2>
+            <label>
+                imput tipo texto
+                <input type="text" placeholder="igrese texto" id="text1" name="texto">
+            </label>
+            <label>
+                imput desactivados
+                <input type="text" placeholder="igrese texto" disabled>
+            </label>
+            <label>
+                imput solo lectura
+                <input type="text" placeholder="isolo lectura" readonly value="solo lectura">
+            </label>
+            <label>
+                imput number
+                <input type="number" placeholder="Edad ej. 18" name="edad">
+            </label>
+            <label>
+                imput email
+                <input type="email" placeholder="correo ej. eduar@gmail.com">
+            </label>
+            <label>
+                imput range(edad)
+                <input type="range">
+            </label>
+            <label>
+                imput telefono
+                <input type="tel" placeholder="(+51)99999999">
+            </label>
+            <label>
+                imput url
+                <input type="url" placeholder="pagina web">
+            </label>
+            <label>
+                imput password
+                <input type="password" placeholder="igrese contraseña">
+            </label>
+            <label>
+                imput color
+                <input type="color">
+            </label>
+            <label>
+                imput search
+                <input type="search" placeholder="buscar">
+            </label>
+            <label>
+                imput subir archivos(seleccione solo imagenes)
+                <input type="file" accept=".jpg, .jpeg">
+            </label>
+            <label>
+                selecionar multiples archivos
+                <input type="file" accept=".jpg, .jpeg" multiple>
+            </label>
+            <input type="hidden" value="datos-ocultos">
+            <input type="submit">
+            <input type="reset">
+        </form>
+        <form>
+            <h2>imputs tipo fecha</h2>
+            <label>
+                imput tipo datetime local- fecha
+                <input type="datetime-local" name="fecha">
+            </label>
+            <label>
+                imput tipo datetime dia
+                <input type="date" name="dia">
+            </label>
+            <label>
+                imput tipo semana
+                <input type="week" name="semana">
+            </label>
+            <label>
+                imput tipo mes
+                <input type="month" name="mes">
+            </label>
+            <input type="submit" name="guardar">
+        </form>
+        <form>
+            <h2>textareas</h2>
+            <label>
+                <textarea placeholder="escibe una descripcion sobre ti..." rows="6"></textarea>
+            </label>
+            <label>
+                <textarea placeholder="escibe una descripcion sobre ti..." rows="6" disabled></textarea>
+            </label>
+            <input type="submit" name="guardar">
+        </form>
+        <form>
+            <h2>selects</h2>
+            <label>
+            <select name="comidas">
+                <option>selecciona tu comida favorita....</option>
+                <option value="fr">francesa</option>
+                <option value="ch">chilena</option>
+                <option value="er">europa</option>
+                <option value="tl">tailandesa</option>
+            </select>
+        </label>
+        <input type="submit" value="guardar">
+
+        </form>
+        <form>
+            <h2>chexbots</h2>
+            <label>
+                <input type="checkbox" name="english"checked value="en">
+                ingles
+            </label>
+            <label>
+                <input type="checkbox" name="españpl" value="es">
+                español
+            </label>
+            <input type="submit" value="guardar" >
+        </form>
+        <form>
+            <h2>radibutons</h2>
+            <blockquote><b>NOTA:</b>solo se  debe selleccionar unmismo atributp</blockquote>
+            <label>
+                <input type="radio" name="languaje" value="in">
+                ingles
+            </label>
+            <label>
+                <input type="radio" name="lenguaje" value="es">
+                español
+            </label>
+            <input type="submit" value="guardar">
+        </form>
+    </main>
+    
+</body>
+</html>
