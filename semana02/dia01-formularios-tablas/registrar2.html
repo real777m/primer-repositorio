@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Register</title>
+  <title>Registro</title>
   <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/@picocss/pico@next/css/pico.min.css"
@@ -32,31 +32,63 @@
       <div class="grid">
         <div>
           <label>
+            nombres
             <input name="text" placeholder="Nombres" required />
           </label>
         </div>
         <div>
           <label>
+            apellidos
             <input name="text" placeholder="Apellidos" required />
           </label>
         </div>
       </div>
-
       <label>
-        <input name="email" placeholder="Email: Ej. user@gmail.com" required />
+        Edad
+        <input type="number" placeholder="Ej: 19" required min="1" max="99"/>
       </label>
-
       <label>
-        <input type="tel" placeholder="Teléfono" id="telefono" name="telefono" />
+        Fecha de nacimiento
+        <input type="date" name="fecha"/>
       </label>
-
+      
       <label>
-        <input type="password" name="password" placeholder="Password" required minlength="6" />
+        Genero
+        <select name="" id="">
+        <option>seleciona tu genero</option>
+        <option value="">masculino</option>
+        <option value="">femenino</option>
+    </select>
       </label>
-
       <label>
-        <input type="password" name="password" placeholder="Confirmar password" required minlength="6" />
+        email
+        <input type="email" placeholder="Email:user@.com" required/>
       </label>
+      <label>
+        Direccion
+        <input type="text" placeholder="direccion" required/>
+        <input type="text" placeholder="direccion linea 2" required/>
+      </label>
+      <label>
+        telefono
+        <input type="tel" placeholder="numero de telefono" id="telefono" name="telefono" />
+      </label>
+      <label>
+        Codigo postal
+        <input name="number" placeholder="Ej: 14001" required minlength="6"/>
+      </label>
+      Ciudad
+      <input type="text" placeholder="Ej: chiclayo" required minlength="6"/>
+    </label>
+    <label>
+        Subir firma
+        <input type="file" accept=".jpg, .jpeg">
+    </label>
+        <label>
+            <input type="checkbox" name="english"checked value="en">
+                Acepto los terminos, condiciones y politicas.
+        </label>
+
 
       <input type="submit" value="Registrarse" />
 
