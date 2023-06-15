@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+body{
+    background-color:hsl(234, 29%, 20%);
+    Font-size: 16px;
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'roboto', sans-serif ;
+}
+main{
+    width: 560px;
+    display: flex;
+}
+.content {
+    background-color: hsl(0, 0%, 100%);
+    width: 260px;
+    padding: 28px;
+    border-radius: 15px 0 0px 15px;
+    box-shadow: 1px 1px 3px #ccc;
+  }
+  .content h1{
+    font-size: 35px;
+}
+.content p{
+  color:  hsl(212, 21%, 14%);
+  margin-top: 14px;
+  margin-bottom: 14px;
+  line-height: 1;
+
+}
+  .foto {
+    width: 300px;
+    background-image: url(./assets/images/illustration-sign-up-desktop.svg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    border-radius:0 15px  15px 0;
+    box-shadow: 1px 1px 3px #ccc;
+  }
+  .content button {
+    font-family: 'roboto', sans-serif;
+    font-weight: 700;
+    background-color: hsl(234, 29%, 20%);
+    border: 0;
+    color: hsl(0, 0%, 100%);
+    width: 100%;
+    padding: 14px;
+    border-radius: 7px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    cursor: pointer;
+  }
+  .content label {
+    display: grid;
+    gap: 7px;
+    align-items:center;
+    font-weight: bold;
+
+  }
+  input{
+    background-color: gb(194, 17, 20);
+    width: 200px;
+  height: 4px;
+  padding: 15px;
+  border-radius: 7px;
+  }
