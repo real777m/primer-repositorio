@@ -154,7 +154,7 @@ background-color: var(--primary-dark-blue-main);
 .how-works__boton{
     color: var(--accent-cyan-gradient);
     font-family: var(--font-secondary);
-    border-bottom: 1px solid  red;
+   
     margin-right: auto;
     border-bottom: 1px solid var(--accent-cyan-gradient);
     padding-bottom: 0.5rem;
@@ -165,16 +165,21 @@ background-color: var(--primary-dark-blue-main);
 }
 .testimonials {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-  
     padding: 0 3rem;
     padding-top: 8rem;
+    padding-bottom: 15rem;
     background-color: var(--primary-dark-blue-main);
     gap: 3rem;
   
     background-image: url(../images/bg-quotes.png) top no-repeat;
   }
-  
+  @media (min-width: 768px) {
+    .testimonials {
+      flex-direction: row;
+    }
+  }
   .testimonial {
     position: relative;
     background-color: var(--primary-dark-blue-testimonials);
