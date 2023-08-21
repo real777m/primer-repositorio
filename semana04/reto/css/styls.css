@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+:root{
+ /* fonts  */
+ --font-primary:'raleway', sans-serif;
+    --font-secondary:'raleway', sans-serif;
+    --fon-size: 14px;
+    --font-weight-regular: 400;
+    --font-weight-bold:700;
+    /* color */
+    --primary-dark-blue-into:hsl(243, 87%, 12%);
+    --primary-dark-blue-main: hsl(238, 22%, 44%);
+   
+    --accent-cyan-moderate:hsl(170, 45%, 43%);
+    --accent-bright-light:hsl(224, 93%, 58%);
+    
+    
+    --neutral-grayish-blue:hsl(240, 75%, 98%);
+    --Light-Gray: hsl(0, 0%, 75%);
+    }
+  *{
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html{
+    font-size: var(--fon-size);
+  }
+  body{
+    background-color: var(--neutral-grayish-blue);
+    
+    font-size: var(--fon-size);
+  }
+  a{
+    color: inherit;
+    text-decoration: none;
+  }
+ 
+  .header{
+    font-family: var(--font-primary);
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+
+  }
+  .header__nav{
+    list-style:none;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    gap: 2rem;
+  }
+
+  /* editar */
+/* 
+  .illustration-container {
+    background-image: url('images/bg-curve-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 114px;
+    width: 100%;
+    margin: 0;
+    margin-top: 5%;
+    padding: 0;
+  } */
+  .section1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:3rem;
+
+  }
+  .section1-left { 
+    flex:1; 
+    margin-right: 5%;
+     margin-top: 5%; 
+    }
+    .section1__text { 
+        font-family: var(--font-secondary);
+        padding-top: 1.5rem;
+        
+        
+      }
+     .section1__title {  
+       font-size: 30px;
+        color: var(--primary-dark-blue-into);
+        
+        
+       }
+        
+  .main-content__btn {
+    width: 50%;
+   background: var(--accent-bright-light);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 2% 7%;
+    vertical-align: middle;
+    font-size: 1.25rem;
+    
+  }
+  
+  .main-content__btn:hover {
+    background:var(--accent-bright-light);
+  }
+  
+  .main-content__email {
+    width: 50%;
+    border: 1px solid var(--primary-dark-blue-into);
+    border-radius: 4px;
+    padding: 3% 7%;
+    margin-right: 5%;
+    font-size: 1.05rem;
+  }
+  .section1-right {  flex: 1; }
+  .main-content__img {  width: 100%; }
+  
+
+
+
+  .main-content__link {
+    color: hsl(170, 45%, 43%);
+    text-decoration: underline;
+    font-size: 1.25rem;
+  }
+  
+  .main-content__link:hover {  color: hsl(170, 45%, 23%); }
+  
+  
+  .section2{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5%;
+
+  }
+  .section3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5%;
+
+  }
+  .section-2 { 
+     background-color: hsl(240, 75%, 98%); padding-top: 0; }
+  .section-2 .section-left {
+      padding-top: 0;
+       margin-top: 0; }
+  .section-3 { 
+     background-color: hsl(238, 22%, 44%); 
+     color: #fff; }
+  .section-3 .main-content__btn { 
+     display: inline-block; 
+     width: fit-content; }
+  
+  .section-3 .main-content__email {
+    display: inline-block;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 5%;
+  }
+  
+  .section-3 .main-content__title {  color: #fff; }
+  
+
+
+  /* Footer */
+.attribution {
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 2%;
+    font-size: 11px;
+    text-align: center;
+  }
+  
+  .attribution__link {  color: hsl(228, 45%, 54%); text-decoration: underline; }
+  .contact-info__item {  padding-bottom: 10%; }
+  
+  .footer-logo {
+    padding: 5% 3% 0;
+    -webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
+  }
+  
+  .footer-main {  display: flex; justify-content: space-around; }
+  .footer-nav {  display: grid; }
+  .footer-nav__menu {  padding-bottom: 8%; }
+  
+  .site-footer {
+    background-color: hsl(243, 87%, 12%);
+    color: #fff;
+    overflow: hidden;
+  }
+  
+  .social-menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 5%;
+  }
+  
+  .social-menu__link {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    font-size: 1.25rem;
+    width: 2.25rem;
+    height: 2.25rem;
+    line-height: 2.25rem;
+    text-align: center;
+    display: inline-block;
+  }
+  .illustration-container {
+    background-image: url();
+    height: 53px;
+  }
+  .card__footer__avatar{
+    border-radius: 50%;
+  }

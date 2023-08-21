@@ -7,3 +7,6 @@ body{
     background-color:$primary-color;
     text-align: center;
 }
+@mixin custom-border{
+    border: 5px solid blue;
+}

@@ -3,6 +3,9 @@
   border: 1px solid #7A9D54;
   border-radius: 4px;
 }
+.card .success {
+  background-color: green;
+}
 .card--header {
   padding: 1rem 1.5rem;
   border-bottom: 1px solid #7A9D54;

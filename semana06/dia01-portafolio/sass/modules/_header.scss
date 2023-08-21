@@ -1,0 +1,53 @@
+.header{
+    // border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    &_logo{
+        color:$primary-color-gold;
+        font-size: 2rem;
+        font-weight: $font-weigth-bold;
+        
+    }
+    &_nav ul{
+        // color: red;
+        list-style: none;
+        display: flex;
+        gap: 1.5rem;
+        padding: 10px;
+        margin: 10px;
+    }
+    &_nav a{
+        font-size: 1.125rem;
+        font-weight: $font-weigth-semibold;
+        text-transform:capitalize;
+        transition: color ease .3s;
+    }
+    &_nav--active,
+    &_nav a:hover{
+        color: $primary-color-gold;
+        border-bottom: 3px solid $primary-color-gold;
+
+    }
+    &_actions{
+        display: flex;
+        gap: 1.5rem;
+
+    }
+    &_action{
+        width: 2.75rem;
+        height: 2.75rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &_action:hover{
+        border-radius: 100%;
+        background-color: $primary-color-blue1;
+        border: none;
+
+    }
+
+}
